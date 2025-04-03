@@ -1,0 +1,127 @@
+/* Main styles for Text Summarizer app */
+
+/* Custom font and base styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f5f7fa;
+}
+
+/* Card styling */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    border-bottom: none;
+    padding: 15px 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Range slider styling */
+.range-wrap {
+    position: relative;
+    margin: 10px 0 30px;
+}
+
+.range-value {
+    position: absolute;
+    top: 30px;
+}
+
+.range-value span {
+    width: 40px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #4361ee;
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 6px;
+}
+
+.range-value span:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #4361ee;
+    left: 50%;
+    top: -5px;
+    transform: translate(-50%, 0);
+}
+
+/* Results page styling */
+.summary-content, .original-content {
+    max-height: 500px;
+    overflow-y: auto;
+    white-space: pre-line;
+    line-height: 1.6;
+}
+
+.original-preview, .summary-preview {
+    max-height: 400px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+}
+
+/* Tabs styling */
+.nav-tabs .nav-link {
+    border: none;
+    color: #6c757d;
+    font-weight: 500;
+    padding: 10px 15px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #4361ee;
+    border-bottom: 3px solid #4361ee;
+    background: transparent;
+}
+
+/* Custom button styling */
+.btn-primary {
+    background-color: #4361ee;
+    border-color: #4361ee;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #3a56d4;
+    border-color: #3a56d4;
+}
+
+/* Badge styling for keywords */
+.badge {
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.25rem;
+    }
+    
+    .table th, .table td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}

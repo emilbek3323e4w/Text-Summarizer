@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer - About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">Text Summarizer AI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-header bg-info text-white">
+                        <h2 class="mb-0">About This Project</h2>
+                    </div>
+                    <div class="card-body">
+                        <h4>Text Summarization Tool</h4>
+                        <p>This application was developed as part of a course project to demonstrate the integration of artificial intelligence in practical applications.</p>
+                        
+                        <h5 class="mt-4">Technologies Used</h5>
+                        <ul>
+                            <li><strong>Python Flask:</strong> Web application framework</li>
+                            <li><strong>NLTK:</strong> Natural Language Toolkit for text processing</li>
+                            <li><strong>TextRank Algorithm:</strong> Graph-based ranking model for extractive summarization</li>
+                            <li><strong>NetworkX:</strong> Graph analysis library for TextRank implementation</li>
+                        </ul>
+                        
+                        <h5 class="mt-4">Project Team</h5>
+                        <p>This project was created by:</p>
+                        <ul>
+                            <li>[Your Name]</li>
+                            <li>[Team Member Names]</li>
+                        </ul>
+                        
+                        <h5 class="mt-4">How It Works</h5>
+                        <p>The Text Summarization Tool utilizes extractive summarization:</p>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h6 class="card-title">Extractive Summarization</h6>
+                                <p class="card-text">This method identifies the most important sentences in a document and extracts them to form a summary. We use the TextRank algorithm, which works similarly to Google's PageRank by creating a graph representation of sentences and determining their importance based on their relationships with other sentences.</p>
+                            </div>
+                        </div>
+                        
+                        <h5 class="mt-4">AI Integration</h5>
+                        <p>This project demonstrates AI integration through:</p>
+                        <ul>
+                            <li><strong>Natural Language Processing:</strong> Using NLTK for text analysis and processing</li>
+                            <li><strong>Graph-based algorithms:</strong> Using TextRank to identify importance of sentences</li>
+                            <li><strong>Automated keyword extraction:</strong> Identifying important topics in the text</li>
+                            <li><strong>Readability analysis:</strong> Assessing text complexity and reading difficulty</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light py-3 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 Text Summarizer AI - Created for [Your Course]</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
