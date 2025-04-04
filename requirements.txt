@@ -1,4 +1,6 @@
-
+scipy
+docx
+textblob
 flask==2.3.3
 nltk==3.8.1
 numpy==1.25.2
