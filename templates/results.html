@@ -79,6 +79,37 @@
                                     {% endfor %}
                                 </div>
                             </div>
+                            <div class="row mt-4">
+                                <!-- Original Text Sentiment -->
+                                <div class="col-md-6">
+                                    <div class="card border-secondary">
+                                        <div class="card-header bg-secondary text-white">
+                                            <h5 class="mb-0">Sentiment Analysis (Original Text)</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p><strong>Sentiment:</strong> {{ text_stats.sentiment.label }}</p>
+                                            <p><strong>Polarity:</strong> {{ "%.3f"|format(text_stats.sentiment.polarity) }}</p>
+                                            <p><strong>Subjectivity:</strong> {{ "%.3f"|format(text_stats.sentiment.subjectivity) }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Summary Sentiment -->
+                                <div class="col-md-6">
+                                    <div class="card border-info">
+                                        <div class="card-header bg-info text-white">
+                                            <h5 class="mb-0">Sentiment Analysis (Summary)</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p><strong>Sentiment:</strong> {{ summary_stats.sentiment.label }}</p>
+                                            <p><strong>Polarity:</strong> {{ "%.3f"|format(summary_stats.sentiment.polarity) }}</p>
+                                            <p><strong>Subjectivity:</strong> {{ "%.3f"|format(summary_stats.sentiment.subjectivity) }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                         
                         <ul class="nav nav-tabs mt-4" id="resultTabs" role="tablist">
